@@ -1,4 +1,4 @@
-from perinolaOficial import Perinola
+from perinola import Perinola
 
 perinola = Perinola()
 perinola.tirar()
