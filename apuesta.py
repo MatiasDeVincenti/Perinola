@@ -15,7 +15,12 @@ class Apuesta:
         self.fichas = self.fichas - cuantas
 
     def tomarTodas(self):
-        if self.fichas == 0:
-            raise ValueError(f"No alcanza para sacar fichas.  Hay solo {self.fichas}")
+        fichasGuardadas = self.fichas        
         self.fichas = 0
-        return self.fichas 
+        return fichasGuardadas
+    
+    def estaVacia(self):
+        if self.fichas == 0:
+            return True
+        else:
+            return False
