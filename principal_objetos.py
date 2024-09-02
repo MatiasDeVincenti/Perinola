@@ -7,4 +7,12 @@ from apuesta import Apuesta
 
 ap = Apuesta()
 print(ap)
+ap.ponerFicha(4)
+print(ap)
+ap.ponerFicha()
+print(ap)
 
+ap.tomarFicha(3)
+print(ap)
+ap.tomarFicha()
+print(ap)
